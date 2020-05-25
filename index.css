@@ -1,0 +1,177 @@
+:root {
+    --main-bg-color: #186ab4;
+    --white:#fff; 
+    --purple:#3e50bf;
+    --light-blue:#edf5ff;
+  }
+.rootContainer{
+    width: 650px;
+    margin: 0 auto;
+    background: var(--main-bg-color);
+}
+#mainContainer {
+    display: flex;
+    -webkit-box-shadow: 0px 17px 15px 0px rgba(22,96,161,1);
+    -moz-box-shadow: 0px 17px 15px 0px rgba(22,96,161,1);
+    box-shadow: 0px 17px 15px 0px rgba(22,96,161,1);
+}
+.rootContainer #mainContainer .left{
+    display: flex;
+}
+.rootContainer #mainContainer .right{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+}
+.keypadContainer.left {
+    flex: 1;
+    flex-direction: column;
+    margin: 20px;
+    background:var(--white);
+}
+.randomContainer.right {
+    flex: 1;
+    flex-direction: column;
+}
+#showNumber {
+    padding-left: 30px;
+    line-height: 50px;
+}
+.showNumberContainer{
+    position: relative;
+    height: 50px;
+}
+.showMessage{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    border: 1px solid red;
+    display: block;
+    font-size: 12px;
+    padding: 5px;
+    color: red;
+    background: #f9eee4;
+    border-radius: 5px;
+}
+
+.numbersWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numberKey {
+    text-align: center;
+    flex: 1 1 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+}
+.cross{
+    font-size: 20px;
+}
+.delete {
+    font-size: 20px;
+    color: #cc1f2a;
+}
+.numberKey:hover {
+    cursor: pointer;
+    background: #00a4ff;
+}
+
+
+.circleDescription{
+    color: var(--white);
+}
+.circle {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    border: 4px solid var(--white);
+}
+p.ticket-desc {
+    margin-top: 20px;
+    color: #FF9800;
+    background: var(--white);
+    border-radius: 2px;
+}
+
+.addTicket {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.addTicket .glyphicon{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px 2px 3px 3px;
+}
+p.ticker-error {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: red;
+    font-size: 12px;
+}
+.hide{
+    display: none;
+}
+
+
+div#ticketNumbersContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+div#tickets {
+    padding: 0px 20px 10px;
+}
+div#tickets h2{
+    color: var(--white);
+    font-size: 18px;
+}
+.eachTicket {
+    display: flex;
+    padding: 5px;
+}
+.tickerNumSub {
+    margin: 5px;
+    background: var(--white);
+    position: relative;
+}
+.heading {
+    border: 1px solid #4c6ac4;
+    width: 80px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #4c6ac4;
+    background: var(--light-blue);
+}
+.eachTicketNumber {
+    background: var(--purple);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 5px;
+    box-sizing: border-box;
+    line-height: 20px;
+    color: var(--white);
+}
+
+.delete-ticket {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: block;
+    background: white;
+    color: #cc1f2a;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: -1px 1px #c0c0c0;
+}

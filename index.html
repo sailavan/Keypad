@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/jitbit/HtmlSanitizer@master/HtmlSanitizer.js"></script>
+</head>
+<body>
+    <div class="rootContainer">
+        <div id="mainContainer">
+            <div  class="keypadContainer left">
+                <div class="showNumberContainer">
+                    <p id="showNumber"></p>
+                    <span class="showMessage">Enter 6 Digits</span>
+                </div>  
+                <div class="numbersWrapper">
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">7</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">8</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">9</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">4</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">5</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">6</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">1</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">2</div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">3</div>
+                    <div class="numberKey cross" onclick="onRemoveNumber(event)">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                    </div>
+                    <div class="numberKey" onclick="onClickNumberKeyPad(event)">0</div>
+                    <div class="numberKey delete" onclick="onTrashNumber(event)">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </div>
+                </div>
+                <div class="addTicketBtnWrapper">
+                    <div class="addTicket"  onclick="addTicket(event)">
+                        <span class="glyphicon glyphicon-plus"></span>  Add Ticket
+                    </div>
+                    <p class='ticker-error hide'></p>
+                </div>
+                
+            </div>
+            <div  class="randomContainer right">
+                <div class="circleDescription">Click the wheel to generate random ticket</div>
+                <div class="circle" onclick="generateRandomNumber(event)"></div>
+                <p class='ticket-desc'>Ticker number range: 100000 - 999999</p>
+        </div>
+    
+        </div>
+        <div id="tickets">
+            <h2>Your Selected Tickets:</h2>
+            <div class="ticketNumbersContainer" id='ticketNumbersContainer'></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
