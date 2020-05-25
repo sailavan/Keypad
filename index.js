@@ -116,5 +116,5 @@ function generateRandomNumber (){
     if(storeTickets.indexOf(getRandomNumber)===-1){
         storeNumber =String(getRandomNumber);
         displayElement.innerHTML=SanitizeHtml(storeNumber)
-    } 554
+    } 
 }
